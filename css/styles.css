@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+:root {
+    /*### Primary*/
+    --Very_dark_blue: hsl(233, 47%, 7%);
+    --Dark_desaturated_blue: hsl(244, 38%, 16%);
+    --Soft_violet: hsl(277, 64%, 61%);
+    /*  ### Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Slightly_transparent_white: hsla(0, 0%, 100%, 0.75);
+    --Slightly_transparent_white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    background-color: var(--Very_dark_blue);
+    /*size*/
+    width: 100vw;
+    /*space*/
+    margin: 0;
+    /*text*/
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    scrollbar-width: none;
+}
+
+.pic-place {
+    border-radius: 10px 10px 0 0;
+    /*image + color-bg*/
+    background-image: url("../images/image-header-mobile.jpg");
+    background-color: var(--Soft_violet);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*size*/
+    height: 30vh;
+    width: 90vw;
+    /*space*/
+    margin: 0;
+}
+
+.web-header {
+    /*space*/
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.web-title {
+    /*text*/
+    color: var(--White);
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+
+.title-marker {
+    /*text*/
+    color: var(--Soft_violet);
+}
+
+.web-intro-text {
+    /*size*/
+    box-sizing: border-box;
+    /*space*/
+    padding-left: 10px;
+    padding-right: 10px;
+    /*text*/
+    color: (--Slightly_transparent_white);
+    line-height: 1.5;
+}
+
+.main-container {
+    border-radius: 10px;
+    background-color: var(--Dark_desaturated_blue);
+    /*space*/
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    /*text*/
+    color: var(--Slightly_transparent_white);
+    text-align: center;
+}
+
+.box-number {
+    /*space*/
+    padding-bottom: 35px;
+}
+
+.title-number {
+    /*space*/
+    margin: 0;
+    margin-bottom: 5px;
+    /*text*/
+    color: var(--White);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.label-number {
+    /*space*/
+    margin: 0;
+    /*text*/
+    color: (--Slightly_transparent_white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/*Frontend Mentor*/
+
+.attribution {
+    /*space*/
+    margin-bottom: 2vh;
+    /*text*/
+    font-size: 11px;
+    text-align: center;
+    color: azure;
+}
+
+.attribution a {
+    /*text*/
+    color: var(--Soft_violet);
+}
+
+
+/*################# Desktop #################*/
+
+@media screen and (min-width: 1025px) {
+    body {
+        /*flex*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*size*/
+        height: 100vh;
+        scrollbar-width: none;
+    }
+    .main-container {
+        /*flex*/
+        display: flex;
+        flex-direction: row-reverse;
+        /*space*/
+        margin-left: 10vw;
+        margin-right: 10vw;
+        /*text*/
+        text-align: left;
+    }
+    .pic-place {
+        border-radius: 0 10px 10px 0;
+        /*flex*/
+        flex: 50%;
+        /*image*/
+        background-image: url("../images/image-header-mobile.jpg");
+        /*size*/
+        height: 100%;
+        width: 540px;
+    }
+    .web-content {
+        /*flex*/
+        flex: 50%;
+        /*size*/
+        box-sizing: border-box;
+        /*space*/
+        padding: 50px;
+        padding-right: 100px;
+    }
+    .web-header {
+        /*space*/
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .web-title {
+        /*text*/
+        font-size: 40px;
+    }
+    .web-intro-text {
+        /*space*/
+        padding-left: 0;
+        padding-right: 40px;
+        /*text*/
+        font-size: 16px;
+    }
+    .section-numbers {
+        /*flex*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*space*/
+        padding-right: 40px;
+    }
+    .box-number {
+        /*space*/
+        padding-bottom: 0;
+    }
+    .label-number {
+        /*text*/
+        font-size: 10px;
+    }
+}
